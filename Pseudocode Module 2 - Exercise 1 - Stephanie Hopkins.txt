@@ -1,6 +1,5 @@
 Start
 	Declarations
-
 		String modelNumber 
 		num height 
 		num weight 
