@@ -1,0 +1,25 @@
+START PROGRAM
+    HOUSEKEEPING: Initialize variables
+    	accountBalance = 0
+    	overDrawnFee = 0
+    	fee = 0
+    INPUT: Collect necessary information
+    	PRINT "Enter the account balance: "
+    	READ accountBalance
+    	PRINT "Enter the number of times the account was overdrawn: "
+    	READ numberOfOverdrawns
+    PROCESS: Compute the fee and the new account balance
+    	IF accountBalance < 0 THEN
+        	Calculate fee for overdrawn accounts
+        		fee = (1 / 100) * accountBalance - 5 * numberOfOverdrawns
+    	ELSE
+        	No fee if not overdrawn
+        		fee = 0
+    	ENDIF
+    Compute new account balance after fee
+    	newAccountBalance = accountBalance - fee
+    OUTPUT: Display results
+    	PRINT "Calculated fee: ", fee
+    	PRINT "New account balance: ", newAccountBalance
+	PRINT "Thanks for using this program"
+END PROGRAM
