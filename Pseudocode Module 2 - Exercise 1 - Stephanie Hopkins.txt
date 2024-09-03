@@ -1,0 +1,19 @@
+START PROGRAM
+    HOUSEKEEPING: Define named constants
+    	CUBIC_INCHES_PER_CUBIC_FOOT = 1728
+    INPUT: Collect information from the user
+    	PRINT "Enter the refrigerator model name:"
+    	READ refrigeratorModelName
+    	PRINT "Enter the interior height of the refrigerator (in inches): "
+    	READ interiorHeight
+    	PRINT "Enter the interior width of the refrigerator (in inches): "
+    	READ interiorWidth
+    	PRINT "Enter the interior depth of the refrigerator (in inches): "
+    	READ interiorDepth
+    PROCESS: Calculate the capacity in cubic feet
+    	cubicInches = interiorHeight * interiorWidth * interiorDepth
+    	refrigeratorCapacityCubicFeet = cubicInches / CUBIC_INCHES_PER_CUBIC_FOOT
+    OUTPUT: Display the refrigerator model name and its capacity
+    	PRINT "Refrigerator model is: ", refrigeratorModelName
+    	PRINT "Refrigerator capacity is: ", refrigeratorCapacityCubicFeet, " cubic feet"
+END PROGRAM
