@@ -1,0 +1,15 @@
+Start
+   Num1 = 6
+   Get Num2
+
+   while Num2 <> to Num1
+      if Num2 > Num1 then
+         print "Too high"
+      else
+         print "Too low"
+      endif
+      Get Num2
+   endwhile
+
+   print "Correct"
+Stop
